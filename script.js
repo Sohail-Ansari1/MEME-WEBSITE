@@ -37,6 +37,6 @@ videoAnimation()
 let facebook = document.querySelector("#facebook")
 function notAvail(){
   alert("FACEBOOK PAGE IS COMING SOON");}
-facebook.addEventListener("onclick",Coming());
+facebook.addEventListener("onclick",notAvail());
   
 
