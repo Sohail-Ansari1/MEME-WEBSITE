@@ -38,16 +38,13 @@ videoAnimation()
 function ComingSoon(){
 
   let facebook = document.querySelector("#facebook")
-
+function notAvail(){
+  alert("FACEBOOK PAGE IS COMING SOON");}
   
-  facebook.addEventListener("onclick",function notAvail(){
-  alert("FACEBOOK PAGE IS COMING SOON");
-  
-  });
   
 
 }
 
-ComingSoon()
-
+facebook.addEventListener("onclick",Coming());
+  
 
