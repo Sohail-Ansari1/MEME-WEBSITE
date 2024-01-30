@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins,sans-serif;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: black;
+    color: white;
+}
+.top{
+    display: flex;
+}
+.navbar {
+flex-basis: 50%;
+height: 2vw;
+margin: 0.5vw 0;
+margin-left: 73%;
+}
+.navbar a{
+    margin: 0 6px;
+text-decoration: none;
+color: #8a8a8a;
+position: relative;
+transition: color 0.5s;
+}
+.navbar a:hover{
+   color: red;
+}
+
+#logo h1{
+
+font-size: 23px;
+margin:  0.5vw 1vw;
+padding: 3px;
+letter-spacing: -1px;
+line-height: 17px;
+border: 1px solid black;
+cursor: none;
+}
+
+#page1 h1{
+
+font-size: 19vw;
+line-height: 8.7vw;
+margin: 0 2vw;
+margin-top: 5vw;
+}
+#page2{
+margin: 4vw 1vw;
+object-fit: cover;
+}
+#video-container video{
+
+height: 100%;
+width: 100%;
+}
+#page2 h1{
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 2.7rem 12px;
+    border-radius: 50%;
+    font-size: 24px;
+    scale: 0;
+    opacity: 0;
+}
+.col-3{
+
+display: flex;
+flex-basis: 30%;
+
+}
+#about h1{
+
+margin: 0 42rem;
+margin-top: 2rem;
+}
+#about p{
+
+color: #8a8a8a;
+padding-left: 1rem;
+margin-bottom: 2rem;
+}
+
+
+#footer{
+
+background-color: black;
+height: 2vw;
+width: 100%;
+color: white;
+padding: 2vw 0;
+}
+#footer h1{
+
+    font-size: 20px;
+margin-left: 10px;
+}
+
+.col-4{
+    display: flex;
+    flex-basis: 24%;
+}
+.col-4 a{
+
+    margin-top: -1.8rem;
+color: white;
+}
+.fa-instagram{
+    scale: 2.5;
+    margin-left: 40rem;
+   
+}
+.fa-facebook{
+    scale: 2.2;
+    margin-left: 13rem;
+ 
+}
+.col-4 h3{
+
+font-weight: 400;
+color: #8a8a8a;
+margin: -1.8rem 6rem;
+}
