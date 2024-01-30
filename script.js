@@ -34,9 +34,4 @@ videocon.addEventListener("mouseleave",function(){
 
 }
 videoAnimation()
-  let button = document.querySelector("#facebook")
-
-button.onclick = function(){
 alert("FACEBOOK PAGE IS COMING SOON")
-    
-}
