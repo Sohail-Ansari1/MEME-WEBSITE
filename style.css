@@ -1,125 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: poppins,sans-serif;
-    scroll-behavior: smooth;
+@font-face {
+  font-family: Amanda;
+  src: url(./AnandaBlackPersonalUseRegular-rg9Rx.ttf);
 }
-*::selection{
-    background-color: black;
-    color: white;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-.top{
-    display: flex;
+
+html, body {
+  height: 100%;
+  width: 100%;
 }
-.navbar {
-flex-basis: 50%;
-height: 2vw;
-margin: 0.5vw 0;
-margin-left: 73%;
+
+#main {
+  display: flex;
+  height: 8rem;
+  width: 100%;
+  background: black;
 }
-.navbar a{
-    margin: 0 6px;
+
+#logo {
+  color: #fff;
+  font-family: Amanda, sans-serif;
+  font-size: 38px;
+  margin: 28px;
+  flex-basis: 30%;
+  text-decoration: underline;
+}
+
+#navbar {
+  padding: 14px;
+  height: 8rem;
+  width: 100%;
+  position: relative;
+  top: 36px;
+  margin-left: 6rem;
+}
+
+#navbar a {
+  font-family: poppins;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+#home {
+  background-image: url(http://wallpapercave.com/wp/Ia5qsiD.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.container {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  text-align: center;
+  font-family: poppins;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.57);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+}
+.container a{
+
+color: #fff;
 text-decoration: none;
-color: #8a8a8a;
-position: relative;
-transition: color 0.5s;
-}
-.navbar a:hover{
-   color: red;
-}
-
-#logo h1{
-
-font-size: 23px;
-margin:  0.5vw 1vw;
-padding: 3px;
-letter-spacing: -1px;
-line-height: 17px;
-border: 1px solid black;
-cursor: none;
-}
-
-#page1 h1{
-
-font-size: 19vw;
-line-height: 8.7vw;
-margin: 0 2vw;
-margin-top: 5vw;
-}
-#page2{
-margin: 4vw 1vw;
-object-fit: cover;
-}
-#video-container video{
-
-height: 100%;
-width: 100%;
-}
-#page2 h1{
-    position: fixed;
-    background-color: black;
-    color: white;
-    padding: 2.7rem 12px;
-    border-radius: 50%;
-    font-size: 24px;
-    scale: 0;
-    opacity: 0;
-}
-.col-3{
-
-display: flex;
-flex-basis: 30%;
-
-}
-#about h1{
-
-margin: 0 42rem;
-margin-top: 2rem;
-}
-#about p{
-
-color: #8a8a8a;
-padding-left: 1rem;
-margin-bottom: 2rem;
-}
-
-
-#footer{
-
 background-color: black;
-height: 2vw;
-width: 100%;
-color: white;
-padding: 2vw 0;
+border: 0.8px solid white;
+font-size: 18px;
+padding: 8px 12px;
+
+
 }
-#footer h1{
+
+#memes {
+  background-image: url(http://wallpapercave.com/wp/Ia5qsiD.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-container video {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+}
+
+#memes h1 {
+  font-family: Amanda;
+  font-size: 44px;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  margin: 20px 0;
+}
+
+#Special {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  display: block;
+  box-shadow: 6px 5px 7px rgba(0, 0, 0, 0.7), -6px -5px 7px rgba(0, 0, 0, 0.7);
+}
+
+#footer {
+  height: 8rem;
+  width: 100%;
+  background: black;
+  color: #fff;
+  font-family: Amanda;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  #navbar {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+ 
+  }
+
+  #navbar a {
+    padding: 0 2px;
+    font-size: 12px;
+    
+  }
+
+  .container {
+    font-size: 18px;
+  }
+
+  #memes h1 {
+    font-size: 32px;
+  }
+
+  #footer {
+    font-size: 18px;
+  }
+  #logo{
 
     font-size: 20px;
-margin-left: 10px;
-}
 
-.col-4{
-    display: flex;
-    flex-basis: 24%;
-}
-.col-4 a{
-
-    margin-top: -1.8rem;
-color: white;
-}
-.fa-instagram{
-    scale: 2.5;
-    margin-left: 40rem;
-   
-}
-.fa-facebook{
-    scale: 2.2;
-    margin-left: 13rem;
- 
-}
-.col-4 h3{
-
-font-weight: 400;
-color: #8a8a8a;
-margin: -1.8rem 6rem;
+  }
 }
