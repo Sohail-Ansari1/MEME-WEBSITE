@@ -43,7 +43,7 @@ html, body {
 }
 
 #navbar a {
-  font-family: Poppins;
+font-family: 'Poppins', sans-serif;
   padding: 0 20px;
   color: #fff;
   text-decoration: none;
@@ -67,7 +67,7 @@ html, body {
   transform: translate(-50%, -50%);
   font-size: 24px;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.57);
   backdrop-filter: blur(4px);
@@ -81,9 +81,12 @@ background-color: black;
 border: 0.8px solid white;
 font-size: 18px;
 padding: 8px 12px;
-font-family: Poppins;
+font-family: 'Poppins', sans-serif;
 
 
+}
+#Welcome{
+  font-family: 'Amanda',sans-serif;
 }
 
 #memes {
